@@ -1,8 +1,13 @@
+from posixpath import expanduser
+
+from uri_template import expand
+
+
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         ans=''
         for i in range(len(s)):
-            ans=max(ans,expand(s,i,i), expand(s,i,i+1), key=len)
+            ans=max(ans,expanduser(s,i,i), expand(s,i,i+1), key=len)
         return ans
             
     def expand(s,i,j):
