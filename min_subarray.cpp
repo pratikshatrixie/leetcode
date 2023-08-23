@@ -3,7 +3,7 @@ using namespace std;
 
 int minSubArrayLen(int k, int arr[], int n) {
     int i = 0; // Starting index of the window
-    int ans = n + 1; // Initialize ans to a value greater than the array size (acts as a placeholder for the minimal length found)
+    int ans = n + 1; // Initia                                                                                          lize ans to a value greater than the array size (acts as a placeholder for the minimal length found)
 
     for (int j = 0; j < n; j++) {
         k -= arr[j]; // Subtract the current element from the target k
