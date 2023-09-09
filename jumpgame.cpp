@@ -1,5 +1,5 @@
+#include <bits/stdc++.h>
 #include <iostream>
-
 using namespace std;
 
 int main()
@@ -14,7 +14,9 @@ int main()
             jumps++;
         }
     }
+    cout<<jumps;
     return jumps;
 }
 
 
+ 
